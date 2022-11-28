@@ -1,0 +1,56 @@
+:root {
+  --main-color: #102a42;
+}
+body {
+  min-height: 750px;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  min-width: 600px;
+  min-height: 400px;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: var(--main-color);
+  font-size: 70px;
+  margin-top: 10px;
+}
+#number {
+  font-size: 90px;
+}
+.btnArea {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: var(--main-color);
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: var(--main-color);
+  padding: 4px 10px 4px 10px;
+  cursor: pointer;
+}
+@keyframes changeColor {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--main-color);
+  }
+  100% {
+    background-color: var(--main-color);
+    color: white;
+  }
+}
+button:hover {
+  animation: changeColor;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
